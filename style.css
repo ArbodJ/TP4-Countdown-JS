@@ -1,3 +1,133 @@
+/*--------------------------*/
+/*----- DEV MOBIL FIRST-----*/
+/*--------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 body {
-  background: wheat;
+  min-height: 100vh;
+  background: mediumturquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+h1 {
+  font-size: 1.1em;
+  margin: 25% 0 0 0;
+}
+h3 {
+  font-size: 0.7em;
+  margin: 15% 0 0 0;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#choice,
+#start {
+  font-size: 0.9em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#countdownDisplay {
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  width: 260px;
+  background: rgba(0, 119, 255, 0.69);
+  border-radius: 15px;
+  font-family: "Squada One", serif;
+  color: #dadada;
+  text-shadow: 0.5px 2px 1px black, 1.5px 3px 2px #000bd9,
+    2px 3.5px 5px rgb(0, 229, 255);
+}
+#prod {
+  font-size: 0.8em;
+}
+#logoContainer {
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+}
+.logo {
+  width: 21px;
+  height: 21px;
+}
+/*--------------------*/
+/*----- RESPONSIV-----*/
+/*--------------------*/
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  #choice,
+  #start {
+    font-size: 1.2em;
+  }
+  #countdownDisplay {
+    font-size: 2em;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+  }
+  #choice,
+  #start {
+    font-size: 1.2em;
+  }
+  #logoContainer {
+    font-size: 1.2em;
+  }
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  h3 {
+    font-size: 1.9em;
+  }
+  #choice,
+  #start {
+    font-size: 1.5em;
+  }
+  #countdownDisplay {
+    font-size: 2.5em;
+  }
+  footer {
+    width: 900px;
+  }
+  #prod {
+    font-size: 1em;
+  }
+  #logoContainer {
+    font-size: 1.2em;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
 }
